@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
+@synthesize window = _window;
+@synthesize myViewCtr = _myViewCtr;
+@synthesize navController = _navController;
 
 - (void)dealloc
 {
@@ -21,7 +24,20 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+
+    //设置背景图片
+//    self.window.backgroundColor = [UIColor colorWithPatternImage:
+//                                   [UIImage imageNamed:@"login.png"] ];
     [self.window makeKeyAndVisible];
+    
+    
+    _myViewCtr = [[FNMyCollectionViewController alloc] init];
+    _navController = [[UINavigationController alloc] init];
+    _navController.navigationBarHidden = YES;//使上面nav消失
+    [_navController pushViewController:_myViewCtr animated:YES];
+    [self.window addSubview:_navController.view];
+    
     return YES;
 }
 

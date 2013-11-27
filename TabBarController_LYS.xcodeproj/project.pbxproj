@@ -13,6 +13,8 @@
 		A040C68B15E66B1800DBB0D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A040C68915E66B1800DBB0D7 /* InfoPlist.strings */; };
 		A040C68D15E66B1800DBB0D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A040C68C15E66B1800DBB0D7 /* main.m */; };
 		A040C69115E66B1800DBB0D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A040C69015E66B1800DBB0D7 /* AppDelegate.m */; };
+		A040C6AB15E6790500DBB0D7 /* FNMyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A040C6A915E6790500DBB0D7 /* FNMyCollectionViewController.m */; };
+		A040C6AC15E6790500DBB0D7 /* FNMyCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A040C6AA15E6790500DBB0D7 /* FNMyCollectionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		A040C68E15E66B1800DBB0D7 /* TabBarController_LYS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TabBarController_LYS-Prefix.pch"; sourceTree = "<group>"; };
 		A040C68F15E66B1800DBB0D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A040C69015E66B1800DBB0D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A040C6A815E6790500DBB0D7 /* FNMyCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNMyCollectionViewController.h; sourceTree = "<group>"; };
+		A040C6A915E6790500DBB0D7 /* FNMyCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNMyCollectionViewController.m; sourceTree = "<group>"; };
+		A040C6AA15E6790500DBB0D7 /* FNMyCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FNMyCollectionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +77,7 @@
 		A040C68615E66B1800DBB0D7 /* TabBarController_LYS */ = {
 			isa = PBXGroup;
 			children = (
+				A040C69715E66B5400DBB0D7 /* Class */,
 				A040C68F15E66B1800DBB0D7 /* AppDelegate.h */,
 				A040C69015E66B1800DBB0D7 /* AppDelegate.m */,
 				A040C68715E66B1800DBB0D7 /* Supporting Files */,
@@ -88,6 +94,16 @@
 				A040C68E15E66B1800DBB0D7 /* TabBarController_LYS-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A040C69715E66B5400DBB0D7 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				A040C6A815E6790500DBB0D7 /* FNMyCollectionViewController.h */,
+				A040C6A915E6790500DBB0D7 /* FNMyCollectionViewController.m */,
+				A040C6AA15E6790500DBB0D7 /* FNMyCollectionViewController.xib */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A040C68B15E66B1800DBB0D7 /* InfoPlist.strings in Resources */,
+				A040C6AC15E6790500DBB0D7 /* FNMyCollectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +171,7 @@
 			files = (
 				A040C68D15E66B1800DBB0D7 /* main.m in Sources */,
 				A040C69115E66B1800DBB0D7 /* AppDelegate.m in Sources */,
+				A040C6AB15E6790500DBB0D7 /* FNMyCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +242,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TabBarController_LYS/TabBarController_LYS-Prefix.pch";
 				INFOPLIST_FILE = "TabBarController_LYS/TabBarController_LYS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -235,6 +254,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TabBarController_LYS/TabBarController_LYS-Prefix.pch";
 				INFOPLIST_FILE = "TabBarController_LYS/TabBarController_LYS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -259,6 +279,7 @@
 				A040C69615E66B1800DBB0D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
